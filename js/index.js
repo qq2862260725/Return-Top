@@ -3,7 +3,6 @@ window.onload = function(){
 	var winH = document.documentElement.clientHeight; //获取视界的高度
 	var timer = null; //定义定时器
 	var isTop = true; //定义是否抵达顶部布尔值判断
-	console.log(winH);
 
 	window.onscroll = function(){
 		var toTop = document.body.scrollTop || document.documentElement.scrollTop;
@@ -27,6 +26,7 @@ window.onload = function(){
 		//设置计时器50ms间隔
 		timer = setInterval(function(){
 			var toTop = document.body.scrollTop || document.documentElement.scrollTop;
+			console.log(29,toTop);
 			//设置速度，用等式而不用具体数值是为了产生混动效果
 			var speed = Math.ceil(toTop/5);
 			//作差，产生欢动效果；
